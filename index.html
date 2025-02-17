@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harmonius</title>
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'nonce-randomValue'; script-src 'self' 'nonce-randomValue'; media-src 'self' https://www.bensound.com; object-src 'none';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains">
+
+    <link rel="manifest" href="/manifest.json">
+    <!-- Apple Touch Icons -->
+    <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" sizes="180x180">
+
+
+  </head>
+<body>
+
+  <audio id="meditationSound" loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-relaxing.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="dropdown">
+    <h1 id="menuToggle">Harmonius</h1>
+    <div class="dropdown-content" id="menu">
+      <a href="#">Option 1</a>
+      <a href="#">Option 2</a>
+      <a href="#">Option 3</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <svg id="chakraFlower" width="400" height="400" viewBox="0 0 400 400">
+      <!-- Muladhara (Root Chakra) – 4 petals in purple #9B59B6 -->
+      <g transform="translate(200,200)">
+        <ellipse cx="0" cy="-50" rx="15" ry="40" fill="#9B59B6" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-50" rx="15" ry="40" fill="#9B59B6" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-50" rx="15" ry="40" fill="#9B59B6" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-50" rx="15" ry="40" fill="#9B59B6" transform="rotate(270)"/>
+      </g>
+
+      <!-- Svadhisthana (Sacral Chakra) – 6 petals in purple #8E44AD -->
+      <g transform="translate(200,200)">
+        <ellipse cx="0" cy="-70" rx="12" ry="35" fill="#8E44AD" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-70" rx="12" ry="35" fill="#8E44AD" transform="rotate(60)"/>
+        <ellipse cx="0" cy="-70" rx="12" ry="35" fill="#8E44AD" transform="rotate(120)"/>
+        <ellipse cx="0" cy="-70" rx="12" ry="35" fill="#8E44AD" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-70" rx="12" ry="35" fill="#8E44AD" transform="rotate(240)"/>
+        <ellipse cx="0" cy="-70" rx="12" ry="35" fill="#8E44AD" transform="rotate(300)"/>
+      </g>
+
+      <!-- Manipura (Solar Plexus Chakra) – 10 petals in purple #732D91 -->
+      <g transform="translate(200,200)">
+        <ellipse cx="0" cy="-90" rx="10" ry="30" fill="#732D91" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-90" rx="10" ry="30" fill="#732D91" transform="rotate(36)"/>
+        <ellipse cx="0" cy="-90" rx="10" ry="30" fill="#732D91" transform="rotate(72)"/>
+        <ellipse cx="0" cy="-90" rx="10" ry="30" fill="#732D91" transform="rotate(108)"/>
+        <ellipse cx="0" cy="-90" rx="10" ry="30" fill="#732D91" transform="rotate(144)"/>
+        <ellipse cx="0" cy="-90" rx="10" ry="30" fill="#732D91" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-90" rx="10" ry="30" fill="#732D91" transform="rotate(216)"/>
+        <ellipse cx="0" cy="-90" rx="10" ry="30" fill="#732D91" transform="rotate(252)"/>
+        <ellipse cx="0" cy="-90" rx="10" ry="30" fill="#732D91" transform="rotate(288)"/>
+        <ellipse cx="0" cy="-90" rx="10" ry="30" fill="#732D91" transform="rotate(324)"/>
+      </g>
+
+      <!-- Anahata (Heart Chakra) – 12 petals in purple #6C3483 -->
+      <g transform="translate(200,200)">
+        <ellipse cx="0" cy="-110" rx="8" ry="25" fill="#6C3483" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-110" rx="8" ry="25" fill="#6C3483" transform="rotate(30)"/>
+        <ellipse cx="0" cy="-110" rx="8" ry="25" fill="#6C3483" transform="rotate(60)"/>
+        <ellipse cx="0" cy="-110" rx="8" ry="25" fill="#6C3483" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-110" rx="8" ry="25" fill="#6C3483" transform="rotate(120)"/>
+        <ellipse cx="0" cy="-110" rx="8" ry="25" fill="#6C3483" transform="rotate(150)"/>
+        <ellipse cx="0" cy="-110" rx="8" ry="25" fill="#6C3483" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-110" rx="8" ry="25" fill="#6C3483" transform="rotate(210)"/>
+        <ellipse cx="0" cy="-110" rx="8" ry="25" fill="#6C3483" transform="rotate(240)"/>
+        <ellipse cx="0" cy="-110" rx="8" ry="25" fill="#6C3483" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-110" rx="8" ry="25" fill="#6C3483" transform="rotate(300)"/>
+        <ellipse cx="0" cy="-110" rx="8" ry="25" fill="#6C3483" transform="rotate(330)"/>
+      </g>
+
+      <!-- Vishuddha (Throat Chakra) – 16 petals in purple #5B2C6F -->
+      <g transform="translate(200,200)">
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(22.5)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(45)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(67.5)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(112.5)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(135)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(157.5)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(202.5)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(225)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(247.5)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(270)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(292.5)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(315)"/>
+        <ellipse cx="0" cy="-130" rx="6" ry="20" fill="#5B2C6F" transform="rotate(337.5)"/>
+      </g>
+
+      <!-- Ajna (Third Eye) – 2 petals in purple #4A235A -->
+      <g transform="translate(200,200)">
+        <ellipse cx="0" cy="-150" rx="15" ry="40" fill="#4A235A" transform="rotate(0)"/>
+        <ellipse cx="0" cy="-150" rx="15" ry="40" fill="#4A235A" transform="rotate(90)"/>
+        <ellipse cx="0" cy="-150" rx="15" ry="40" fill="#4A235A" transform="rotate(180)"/>
+        <ellipse cx="0" cy="-150" rx="15" ry="40" fill="#4A235A" transform="rotate(270)"/>
+      </g>
+
+      <!-- Sahasrara (Crown Chakra) – Radiant Halo in purple #9B59B6 -->
+      <circle cx="200" cy="200" r="170" fill="none" stroke="#9B59B6" stroke-width="4" stroke-dasharray="5,5" />
+      <!-- Central Core of the Flower -->
+      <circle cx="200" cy="200" r="10" fill="#9B59B6" />
+    </svg>
+
+    <div class="box">
+      <p id="timer">5:00</p>
+      <button id="startButton">Start</button>
+      <button id="stopButton">Stop</button>
+    </div>
+  </div>
+
+  <footer>
+    <p>Music by: <a href="https://www.bensound.com/free-music-for-videos">Bensound</a></p>
+    <p>License code: BUJAHQ66I8EIXKD7</p>
+  </footer>
+
+</body>
+</html>
