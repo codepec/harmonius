@@ -32,15 +32,6 @@ To set up GitHub Pages for your repository:
 3. Select the branch (e.g., `main`) and set the source to the root folder.
 4. Your site will be published at the above URL within a few minutes.
 
-## License
-
-The music in this app is used under a free license with attribution from Bensound. The license code is **BUJAHQ66I8EIXKD7**.
-
-**Music by**: [Bensound](https://www.bensound.com/free-music-for-videos)  
-**License code**: BUJAHQ66I8EIXKD7
-
-The music is used in accordance with the [Bensound Terms of Use](https://www.bensound.com/free-music-for-videos).
-
 ## Contributing
 
 If you'd like to contribute to the project, simply fork the repository, create a new branch, and submit a pull request.
@@ -61,5 +52,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgements
 
-- Bensound for providing free music
 - All contributors and developers who have helped with this project
+
